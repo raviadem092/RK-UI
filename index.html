@@ -1,12 +1,286 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>Hello, World!</title>
-    <link rel="stylesheet" href="styles.css" />
-  </head>
-  <body>
-      <h1 class="title">Hello World! </h1>
-      <p id="currentTime"></p>
-      <script src="script.js"></script>
-  </body>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ravi kumar --Portfolio</title>
+    <link rel ="icon" href ="images/logo2.png">
+    <link rel="stylesheet" href="styles.css"><!--connecting css-->
+    <script src="https://kit.fontawesome.com/4194cf0262.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="header">
+    <!--Add Navigation bar im container class in div tag-->
+    <div class="container">
+        <nav>
+            <img src="images/newlogo.jpg" class="logo" style="width: 20px; height: 20px;">
+            <!--Add List of menus-->
+            <ul id ="sidemenu">
+                <li><a href="#header">Home</a></li><!--adding anchor tag for clickable purpose-->
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact us</a></li>
+            <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+            </ul>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            
+        </nav>
+        <div class="header-text">
+            <h1> Hi, I'm <span>Ravi Kumar</span><br>From JNTU University, Hyderabad.</h1>
+        </div>
+    </div>
+</div>
+<!-- -----------------=============------About Section-----------------==============-------->
+<div id="about">
+  <div class="container">
+      <div class="row">
+          <div class="about-col-1">
+              <img src="images/ravikumaryadav.jpg">
+          </div>
+          <div class="about-col-2">
+              <h1 class="sub-title">About Me</h1>
+              <p>
+                  I'm A Ravi Kumar, a passionate Full Stack Developer specializing in Java, Angular, and Spring Boot. I have a strong foundation in web application development, along with skills in technologies like Node.js, MySQL, and currently enhancing my skills on Microsoft Azure. Currently working at Recordent Technologies Pvt. Ltd., I am focused on delivering scalable and innovative solutions.
+              </p>
+
+              <div class="tab-titles">
+                  <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                  <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                  <p class="tab-links" onclick="opentab('education')">Education</p>
+              </div>
+
+              <!-- Skills Tab -->
+              <div class="tab-contents active-tab" id="skills">
+                  <ul>
+                      <li><span>Web Development</span><br>Building responsive and interactive websites using HTML, CSS, JavaScript, Angular, and Bootstrap.</li>
+                      <li><span>Backend Development</span><br>Developing robust APIs using Java, Spring Boot, and Node.js.</li>
+                      <li><span>Database Management</span><br>Experience with MySQL, Oracle SQL, and database optimization techniques.</li>
+                  </ul>
+              </div>
+
+              <!-- Experience Tab -->
+              <div class="tab-contents" id="experience">
+                <ul>
+                    <li>
+                        <span>2024 - Current</span><br>
+                        Full Stack Developer at Recordent Technologies Pvt. Ltd.<br>
+                        <p>
+                            At Recordent.com, I work as a Full Stack Developer focusing on building and maintaining collections management systems and automation tools. My responsibilities include:
+                        </p>
+                        <ul>
+                            <li>Developing scalable and user-friendly web applications using Angular and Spring Boot.</li>
+                            <li>Designing and implementing efficient APIs for seamless integration with internal and external systems.</li>
+                            <li>Building automated solutions for email, SMS, and WhatsApp notifications to enhance user engagement.</li>
+                            <li>Improving data visualization and reporting tools to provide better insights to clients.</li>
+                            <li>Collaborating with cross-functional teams to enhance the platform's performance and usability.</li>
+                            <li>Optimizing backend logic and database queries using Node.js and MySQL for faster response times.</li>
+                            <li>Managing cloud infrastructure using Microsoft Azure for deployment and scaling of applications.</li>
+                        </ul>
+                        <p>
+                            I have contributed significantly to key features, including bulk data uploads using Excel, Zoho Books integrations and recently developed Offers, helping businesses streamline their financial processes.
+                        </p>
+                    </li>
+                </ul>
+            </div>
+            
+
+              <!-- Education Tab -->
+              <div class="tab-contents" id="education">
+                  <ul>
+                      <li><span>2023</span><br>Full Stack Java Developer Training at Naresh IT Technologies.</li>
+                      <li><span>2020 - 2023</span><br>B.Tech. in Computer Science, JNTU Affiliated College.</li>
+                      <li><span>2017 - 2020</span><br>Diploma in Computer Science, TRR College of Technology.</li>
+                  </ul>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
+<!-----------------------Services Sectiom------------->
+<!-----------------------Services Sectiom------------->  
+<div id="services">
+  <div class="container">
+      <h1 class="sub-title">My Services</h1>
+      <div class="services-list">
+          <!-- Web Development Service -->
+          <div>
+              <i class="fa-solid fa-laptop-code"></i>
+              <h2>Web Development</h2>
+              <p>
+                  I specialize in creating modern, responsive, and user-friendly websites tailored to meet your business needs. From single-page applications to full-stack development, I deliver solutions that combine performance with design.
+              </p>
+              <a href="#">Learn more</a>
+          </div>
+          <!-- UI/UX Design Service -->
+          <div>
+              <i class="fa-solid fa-palette"></i>
+              <h2>UI/UX Design</h2>
+              <p>
+                  I design intuitive and visually engaging interfaces that enhance user experience. By focusing on simplicity and usability, I ensure seamless interaction between users and digital products.
+              </p>
+              <a href="#">Learn more</a>
+          </div>
+          <!-- Application Development Service -->
+          <div>
+              <i class="fa-solid fa-mobile-alt"></i>
+              <h2>Application Development</h2>
+              <p>
+                  From concept to deployment, I build scalable, secure, and feature-rich web and mobile applications. Using Java and modern frameworks, I turn ideas into high-performing solutions.
+              </p>
+              <a href="#">Learn more</a>
+          </div>
+      </div>
+  </div>
+</div>
+<!------------------------portfolio-------------------->
+<div id="portfolio">
+  <div class="container">
+      <h1 class="subtitle">My Projects</h1>
+      <div class="work-list">
+          <!-- Project 1: Full-Fledged User Management -->
+          <div class="work">
+              <img src="images/work.jpg" width="300" height="300">
+              <div class="layer">
+                  <h3>Full-Fledged User Management</h3>
+                  <p>
+                      A comprehensive User Management System built with React for the front-end and Spring Boot for the back-end. It includes features like user authentication, role-based access control, and user CRUD operations.
+                  </p>
+                  <a href="https://github.com/your-username/full-fledged-user-management" target="_blank">
+                      <i class="fa-solid fa-up-right-from-square"></i>
+                  </a>
+              </div>
+          </div>
+
+          <!-- Project 2: ToDo Application -->
+          <div class="work">
+              <img src="images/work2.jpg" width="300" height="300">
+              <div class="layer">
+                  <h3>ToDo Application</h3>
+                  <p>
+                      A task management application developed using Angular and Node.js. Features include task creation, status updates, and filtering tasks by priority or completion status.
+                  </p>
+                  <a href="https://github.com/your-username/todo-application" target="_blank">
+                      <i class="fa-solid fa-up-right-from-square"></i>
+                  </a>
+              </div>
+          </div>
+
+          <!-- Project 3: Recordent.com -->
+          <div class="work">
+              <img src="images/work3.jpg" width="300" height="300">
+              <div class="layer">
+                  <h3>Collections Management - Recordent.com</h3>
+                  <p>
+                      Currently working on Recordent.com's collections management project. It involves managing customer data, dues, and collections through a scalable platform.
+                  </p>
+                  <a href="https://recordent.com" target="_blank">
+                      <i class="fa-solid fa-up-right-from-square"></i>
+                  </a>
+              </div>
+          </div>
+      </div>
+      <a href="#" class="btn">See more</a>
+  </div>
+</div>
+<!--------------------------------Contact us------------------------->
+<div id="contact">
+  <div class="container">
+      <div class="row">
+          <div class="contact-left">
+              <h1 class="subtitle">Contact Us</h1>
+              <p><i class="fa-solid fa-envelope"></i> raviadem8055@gmail.com</p>
+              <p><i class="fa-solid fa-phone"></i> +91 6300686036</p>
+              <div class="social-icons">
+                  <a href="https://twitter.com/home"><i class="fa-brands fa-twitter"></i></a>
+                  <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                  <a href="https://github.com/raviadem092"><i class="fa-brands fa-github"></i></a>
+              </div>
+              <a href="images/My Stuff.pdf" download class="btn btn2">Download My Resume</a>
+          </div>
+          <div class="contact-right">
+              <form action="/submit-contact" method="POST">
+                  <input type="text" name="Name" placeholder="Your Name" required>
+                  <input type="email" name="Email" placeholder="Your Email" required>
+                  <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                  <button type="submit" class="btn btn2">Submit</button>
+              </form>
+              <span id="msg"></span>
+          </div>
+      </div>
+  </div>
+  <div class="copyright">
+      <p>copyright &copy; Ravi Adem | All rights reserved<i class="fa-solid fa-heart"></i></p>
+  </div>
+</div>
+ 
+
+
+<script>
+  function checkConnection() {
+      if (!navigator.onLine) {
+          window.location.href = 'offline.html';
+      }
+  }
+  window.addEventListener('load', checkConnection);
+  window.addEventListener('online', () => location.reload());
+  window.addEventListener('offline', checkConnection);
+</script>
+
+
+
+<script>
+
+    var tablinks= document.getElementsByClassName("tab-links")
+    var tabcontents= document.getElementsByClassName("tab-contents")
+
+    function opentab(tabname) {
+
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+</script>
+
+<!---for mobiles screen-->
+<script>
+    var sidemenu = document.getElementById("sidemenu");
+
+    function openmenu() {
+        sidemenu.style.right ="0";
+    }
+    function closemenu() {
+        sidemenu.style.right ="-200px";
+    }
+</script>
+
+<script>
+   const scriptURL = 'https://script.google.com/macros/s/AKfycbwC3OWnxZqTAmdXiTcX5PSg87c-jCLJ29Z_Dz6t8JNITQwJHsSS4BGbV8HqmkUkZz7c/exec';
+
+    const form = document.forms['submit-to-google-sheet']
+
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault();
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML= "Message sent successfully";
+            setTimeout(function() {
+            msg.innerHTML = "";
+            }, 5000);
+
+        form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    });
+
+  </script>
+</body>
 </html>
+
